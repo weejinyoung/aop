@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+
+  database:
+    image: mysql:8.0
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: aop
+      MYSQL_USER: aop
+      MYSQL_PASSWORD: 4637
+      MYSQL_ROOT_PASSWORD: 4637
